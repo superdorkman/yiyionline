@@ -1,0 +1,266 @@
+[
+  {
+    "goodsType": "游戏币",
+    "goodsTypeEn": "gold",
+    "chuhuo": 1,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "游戏币",
+    "goodsTypeEn": "gold",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "深渊票",
+    "goodsTypeEn": "shengyuanpiao",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "深渊票",
+    "goodsTypeEn": "shengyuanpiao",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "游戏账号",
+    "goodsTypeEn": "account",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "搬砖号",
+    "goodsTypeEn": "bzh",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "太阳账号",
+    "goodsTypeEn": "tyzh",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "无色小晶体",
+    "goodsTypeEn": "wsxjt",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "宝珠",
+    "goodsTypeEn": "bj",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "称号",
+    "goodsTypeEn": "ch",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "魔刹石",
+    "goodsTypeEn": "mss",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "无色小晶体",
+    "goodsTypeEn": "wsxjt",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "宝珠",
+    "goodsTypeEn": "bj",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "称号",
+    "goodsTypeEn": "ch",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "魔刹石",
+    "goodsTypeEn": "mss",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "装备",
+    "goodsTypeEn": "equipment",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "服务器喇叭",
+    "goodsTypeEn": "fwqlb",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "装备",
+    "goodsTypeEn": "equipment",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "服务器喇叭",
+    "goodsTypeEn": "fwqlb",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "上级元素结晶",
+    "goodsTypeEn": "sjysjj",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "上级元素结晶",
+    "goodsTypeEn": "sjysjj",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "数据芯片",
+    "goodsTypeEn": "sjxp",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "数据芯片",
+    "goodsTypeEn": "sjxp",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "矛盾的结晶体",
+    "goodsTypeEn": "mddjjt",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "矛盾的结晶体",
+    "goodsTypeEn": "mddjjt",
+    "chuhuo": 0,
+    "scale": 1,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "强化券",
+    "goodsTypeEn": "qhq",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "强化券",
+    "goodsTypeEn": "qhq",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "增幅券",
+    "goodsTypeEn": "zengfuquan",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "增幅券",
+    "goodsTypeEn": "zengfuquan",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "材料",
+    "goodsTypeEn": "material",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "材料",
+    "goodsTypeEn": "material",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "寄售交易",
+    "tradeTypeEn": "consign"
+  },
+  {
+    "goodsType": "老玩家推荐码",
+    "goodsTypeEn": "lwjtjm",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  },
+  {
+    "goodsType": "其它",
+    "goodsTypeEn": "other",
+    "chuhuo": 0,
+    "scale": 0,
+    "tradeType": "担保交易",
+    "tradeTypeEn": "guarantee"
+  }
+]

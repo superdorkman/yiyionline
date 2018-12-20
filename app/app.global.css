@@ -1,43 +1,81 @@
-/*
- * @NOTE: Prepend a `~` to css file paths that are in your node_modules
- *        See https://github.com/webpack-contrib/sass-loader#imports
- */
-@import "~@fortawesome/fontawesome-free/css/all.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
 
 body {
-  position: relative;
-  color: white;
-  height: 100vh;
-  background-color: #232c39;
-  background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7));
-  font-family: Arial, Helvetica, Helvetica Neue, serif;
-  overflow-y: hidden;
+  font: menu;
+  overflow: hidden;
 }
 
-h2 {
-  margin: 0;
-  font-size: 2.25rem;
-  font-weight: bold;
-  letter-spacing: -0.025em;
-  color: #fff;
-}
-
-p {
-  font-size: 24px;
-}
-
-li {
+ul {
   list-style: none;
 }
 
-a {
-  color: white;
-  opacity: 0.75;
-  text-decoration: none;
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
 }
 
-a:hover {
+button, input {
+  outline: none;
+  border: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  /* -webkit-app-region: drag; */
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.template-enter {
+  opacity: 0.01;
+  transform: scaleY(0.3) translateY(30%);
+}
+.template-enter-active {
   opacity: 1;
-  text-decoration: none;
-  cursor: pointer;
+  transform: scaleY(1) translateY(0%);
+  transition: all 200ms ease-out;
+}
+.template-exit {
+  opacity: 1;
+  transform: scaleY(1) translateY(0%);
+}
+.template-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9, 0.3) translateY(30%);
+  transition: all 200ms ease-in;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
 }

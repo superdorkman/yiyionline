@@ -1,0 +1,592 @@
+[
+  {
+    "areaName": "广东区",
+    "serverName": "广东1区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川1区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "北京区",
+    "serverName": "北京1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北1区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "广西区",
+    "serverName": "广西1区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "东北区",
+    "serverName": "东北1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "上海区",
+    "serverName": "上海1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "安徽区",
+    "serverName": "安徽1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "河北区",
+    "serverName": "河北1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "西南区",
+    "serverName": "西南1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "山西区",
+    "serverName": "山西1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "天津区",
+    "serverName": "天津1区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南1区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "云贵区",
+    "serverName": "云贵1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "内蒙古区",
+    "serverName": "内蒙古1区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "新疆区",
+    "serverName": "新疆1区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "福建区",
+    "serverName": "福建1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "辽宁区",
+    "serverName": "辽宁1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "华北区",
+    "serverName": "华北1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "西北区",
+    "serverName": "西北1区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "江西区",
+    "serverName": "江西1区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "黑龙江区",
+    "serverName": "黑龙江1区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "陕西区",
+    "serverName": "陕西1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "吉林区",
+    "serverName": "吉林1/2区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "重庆区",
+    "serverName": "重庆1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "体验服",
+    "serverName": "格兰之森1",
+    "cross": "0"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东2区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川2区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "北京区",
+    "serverName": "北京2/4区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北2区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "东北区",
+    "serverName": "东北2区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "广西区",
+    "serverName": "广西2/4区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东2/7区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "上海区",
+    "serverName": "上海2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "西南区",
+    "serverName": "西南2区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "安徽区",
+    "serverName": "安徽2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "河北区",
+    "serverName": "河北2/3区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南2区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南2区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "福建区",
+    "serverName": "福建2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "重庆区",
+    "serverName": "重庆2区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "辽宁区",
+    "serverName": "辽宁2区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "华北区",
+    "serverName": "华北2区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "江西区",
+    "serverName": "江西2区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "黑龙江区",
+    "serverName": "黑龙江2/3区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "西北区",
+    "serverName": "西北2/3区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "陕西区",
+    "serverName": "陕西2/3区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "云贵区",
+    "serverName": "云南1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "体验服",
+    "serverName": "格兰之森2",
+    "cross": "0"
+  },
+  {
+    "areaName": "山西区",
+    "serverName": "山西2区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东3区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "北京区",
+    "serverName": "北京3区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川3区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏3区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北3区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "广西区",
+    "serverName": "广西3区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江3区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "东北区",
+    "serverName": "东北3/7区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东3区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "西南区",
+    "serverName": "西南3区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "上海区",
+    "serverName": "上海3区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南3区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "云贵区",
+    "serverName": "贵州1区",
+    "cross": "DNF跨3b"
+  },
+  {
+    "areaName": "河北区",
+    "serverName": "河北4区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南3区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "安徽区",
+    "serverName": "安徽3区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "辽宁区",
+    "serverName": "辽宁3区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "华北区",
+    "serverName": "华北3区",
+    "cross": "DNF跨6"
+  },
+  {
+    "areaName": "江西区",
+    "serverName": "江西3区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "福建区",
+    "serverName": "福建3/4区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东4区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广西区",
+    "serverName": "广西5区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏4区",
+    "cross": "DNF跨5"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川4区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北4区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "东北区",
+    "serverName": "东北4/5/6区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江4/5区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "上海区",
+    "serverName": "上海4/5区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东4区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南4区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南4区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "河北区",
+    "serverName": "河北5区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "华北区",
+    "serverName": "华北4区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东5区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏5/7区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川5区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北5区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江6区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东5区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南5区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南5区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东6区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "四川区",
+    "serverName": "四川6区",
+    "cross": "DNF跨3a"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北6区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏6区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "浙江区",
+    "serverName": "浙江7区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "山东区",
+    "serverName": "山东6区",
+    "cross": "DNF跨8"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南6区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南6区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东7区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北7区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "江苏区",
+    "serverName": "江苏8区",
+    "cross": "DNF跨4"
+  },
+  {
+    "areaName": "河南区",
+    "serverName": "河南7区",
+    "cross": "DNF跨7"
+  },
+  {
+    "areaName": "湖南区",
+    "serverName": "湖南7区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东8区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "湖北区",
+    "serverName": "湖北8区",
+    "cross": "DNF跨2"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东9区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东10区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东11区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东12区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广东13区",
+    "cross": "DNF跨1"
+  },
+  {
+    "areaName": "广东区",
+    "serverName": "广州1/2区",
+    "cross": "DNF跨1"
+  }
+]
