@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PrivateRoute from '../components/common/private/PrivateRoute';
 
+import Sidebar from '../components/sidebar/Sidebar';
+
 // import Detail from './detail/Detail';
 // import FillInfo from './fill-info/FillInfo';
 // import Goods from './Goods';
@@ -17,6 +19,7 @@ class Buy extends Component {
 
     return (
       <Fragment>
+        <Sidebar />
         <Switch>
           {/* <Route exact path={`${match.url}/`} component={Goods} />
           <Route exact path={`${match.url}/:sn`} component={Detail} />
