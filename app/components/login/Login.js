@@ -6,6 +6,11 @@ import Loading from '../libs/loading/Loading';
 import logo from '../../assets/images/login-logo.png';
 import svgIcons from '../../assets/icons/icons.svg';
 
+import UsernameIcon from '../common/icons/Username';
+import PasswordIcon from '../common/icons/Password';
+import LineIcon from '../common/icons/Line';
+import CloseIcon from '../common/icons/Close';
+
 const { ipcRenderer } = window.require('electron');
 
 export class Login extends Component {
@@ -71,19 +76,25 @@ export class Login extends Component {
           <img src={logo} />
           <Ctrls>
             <li onClick={() => this.handleCtrlClick('extract')}>
-              <svg><use xlinkHref={`${svgIcons}#line`} /></svg></li>
+              <LineIcon />
+            </li>
             <li className="close" onClick={() => this.handleCtrlClick('close')}>
-              <svg><use xlinkHref={`${svgIcons}#close`} /></svg></li>
+              <CloseIcon />
+            </li>
           </Ctrls>
         </Top>
         <Bottom>
           <IptWrap>
-            <div className="icon"><svg><use xlinkHref={`${svgIcons}#username`} /></svg></div>
+            <div className="icon">
+              <UsernameIcon />
+            </div>
             <input value={username} onChange={(e) => this.handleIptChange('username', e)} />
             <span className="line"></span>
           </IptWrap>
           <IptWrap>
-            <div className="icon"><svg><use xlinkHref={`${svgIcons}#password`} /></svg></div>
+            <div className="icon">
+              <PasswordIcon />  
+            </div>
             <input value={password} type="password" 
               onKeyDown={this.handleKeyDown}
               onChange={(e) => this.handleIptChange('password', e)} />
