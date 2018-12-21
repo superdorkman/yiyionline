@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
-import { Container } from './Sidebar.styled';
+import { Container, Info, Menus } from './Sidebar.styled';
 import Avatar from '../common/avatar/Avatar';
 
 const menus = [
@@ -31,11 +31,16 @@ export class Sidebar extends Component {
   render() {
     return (
       <Container>
-        <Avatar />
+        <Info>
+          <Avatar />
+          <div className="name">吴云光</div>
 
-        <ul className="menus">
+        </Info>
+        
+
+        <Menus>
           {this.renderMenus()}
-        </ul>
+        </Menus>
       </Container>
     )
   }

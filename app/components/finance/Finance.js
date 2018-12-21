@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class Center extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+export class Finace extends Component {
 
   render() {
     return (
@@ -24,4 +20,4 @@ const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Center)
+export default connect(mapStateToProps, mapDispatchToProps)(Finace)

@@ -3,16 +3,11 @@ import { Route, Switch } from 'react-router-dom';
 import PrivateRoute from '../components/common/private/PrivateRoute';
 
 import Sidebar from '../components/sidebar/Sidebar';
+import Center from '../components/center/Center';
+import Finance from '../components/finance/Finance';
 
-// import Detail from './detail/Detail';
-// import FillInfo from './fill-info/FillInfo';
-// import Goods from './Goods';
-// import RoleList from './role-list/RoleList';
-// import RoleAdd from './role-add/RoleAdd';
-// import Pay from './pay/Pay';
-// import QuickBuy from './quick-buy/QuickBuy';
 
-class Buy extends Component {
+class Home extends Component {
 
   render() {
     const { match } = this.props;
@@ -21,13 +16,8 @@ class Buy extends Component {
       <Fragment>
         <Sidebar />
         <Switch>
-          {/* <Route exact path={`${match.url}/`} component={Goods} />
-          <Route exact path={`${match.url}/:sn`} component={Detail} />
-          <PrivateRoute exact path={`${match.url}/:sn/create`} component={FillInfo} />
-          <PrivateRoute exact path={`${match.url}/:sn/chu`} component={QuickBuy} />
-          <PrivateRoute exact path={`${match.url}/:sn/roles`} component={RoleList} />
-          <PrivateRoute exact path={`${match.url}/:sn/roles/:action`} component={RoleAdd} />
-          <PrivateRoute exact path={`${match.url}/:sn/pay`} component={Pay} /> */}
+          <Route exact path={`${match.url}/`} component={Center} />
+          <Route exact path={`${match.url}/finance`} component={Finance} />
         </Switch>
       </Fragment>
     );
@@ -36,4 +26,4 @@ class Buy extends Component {
 }
 
 
-export default Buy;
+export default Home;

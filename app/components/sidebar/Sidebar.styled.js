@@ -10,36 +10,41 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(#7261f2, #4530df);
+`;
 
-  .menus {
-    flex: 1;
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 
-    li {
-      display: flex;
-      height: 42px;
-
-      a {
-        display: flex;
-        flex: 1;
-        color: #fff;
-        align-items: center;
-        justify-content: center;
-
-        &.active {
-          background-color: #f7f5f6;
-          color: #333;
-        }
-      }
-      
-    }
+  .name {
+    margin: 10px 0;
   }
 `;
 
-export const Top = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 126px;
-  padding-top: 20px;
-  background-image: linear-gradient(#8868f1, #6a4cce);
+
+export const Menus = styled.ul`
+  -webkit-app-region: no-drag;
+  // flex: 1;
+
+  li {
+    display: flex;
+    height: 42px;
+
+    a {
+      display: flex;
+      flex: 1;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        background-color: #f7f5f6;
+        color: #333;
+      }
+    }
+    
+  }
 `;

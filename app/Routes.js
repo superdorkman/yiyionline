@@ -10,7 +10,7 @@ export default () => (
   <App>
     <Switch>
       <Route path="/login" component={Login} />
-      <PrivateRoute path="/" exact={true} component={HomeStack} />
+      <PrivateRoute path="/" component={HomeStack} />
     </Switch>
   </App>
 );

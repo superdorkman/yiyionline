@@ -15,6 +15,10 @@ body {
   background-color: transparent;
 }
 
+#root {
+  display: flex;
+}
+
 ul {
   list-style: none;
 }
