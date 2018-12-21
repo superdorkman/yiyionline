@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { login } from '../../actions/app';
 import { API_URL } from '../../constants/url';
 import { Container, IptWrap, Submit, Top, Ctrls, Bottom, } from './Login.styled';
 import Loading from '../libs/loading/Loading';
@@ -54,8 +56,9 @@ export class Login extends Component {
           if (data) {
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
-            localStorage.session = JSON.stringify(data);
+            sessionStorage.session = JSON.stringify(data);
             ipcRenderer.send('auth:login');
+            this.props.login(data);
             this.props.history.replace('/');
           } else if (error) {
             this.setState({ isSubmitting: false });
@@ -111,4 +114,8 @@ export class Login extends Component {
   }
 }
 
-export default Login;
+const mapDispatchToProps = (dispatch) => ({
+  login: (session) => dispatch(login(session))
+});
+
+export default connect(null, mapDispatchToProps)(Login);

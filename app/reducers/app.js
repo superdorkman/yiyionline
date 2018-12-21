@@ -13,12 +13,7 @@ const initialSetting = {
   chatSN: '',
 }
 
-// localStorage.removeItem('session')
-
-const isWechat = navigator.userAgent.indexOf('MicroMessenger') > -1;
-initialSetting.isWechat = isWechat;
-
-const session = localStorage.session && JSON.parse(localStorage.session);
+const session = sessionStorage.session && JSON.parse(sessionStorage.session);
 if (session) {
   initialSetting.isLoggedIn = true;
   initialSetting.session = session;

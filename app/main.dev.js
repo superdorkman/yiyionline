@@ -75,7 +75,7 @@ function prepareChatWin() {
   // console.log(win.getBounds())
   const { width: sw, height: sh } = require('electron').screen.getPrimaryDisplay().workAreaSize;
   // win.setSkipTaskbar(false);
-  win.loadURL(startUrl);
+  // win.loadURL(startUrl);
   const _x = (sw - 1200) / 2;
   const _y = (sh - 800) / 2;
   win.setBounds({
