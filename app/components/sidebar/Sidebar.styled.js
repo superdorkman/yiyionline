@@ -10,6 +10,29 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(#7261f2, #4530df);
+
+  .menus {
+    flex: 1;
+
+    li {
+      display: flex;
+      height: 42px;
+
+      a {
+        display: flex;
+        flex: 1;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+          background-color: #f7f5f6;
+          color: #333;
+        }
+      }
+      
+    }
+  }
 `;
 
 export const Top = styled.div`

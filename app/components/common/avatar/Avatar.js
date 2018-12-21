@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Person } from '../icons';
 import Lazyload from '../../libs/lazyload/Lazyload';
 
 export class Avatar extends Component {
@@ -20,23 +19,28 @@ export class Avatar extends Component {
       <div style={style} >
         {src ? (
           <Lazyload src={src} isAvatar={true} />
-        ) : <Person theme={theme} />}
+        ) : (
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="14" r="8" fill="#fff" />
+            <circle cx="20" cy="54" r="28" fill="#fff" />
+          </svg>
+        )}
       </div>
     )
   }
 }
 
 Avatar.defaultProps = {
-  size: '6.8vw',
+  size: 80,
 }
 
 const styles = {};
 
 styles.wrap = {
   display: 'inline-block',
-  border: '1px solid #ffcf4c',
+  border: '2px solid #fff',
   borderRadius: '50%',
-  overflow: 'hidden'
+  overflow: 'hidden',
 }
 
 

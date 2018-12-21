@@ -9,8 +9,8 @@ import PrivateRoute from './components/common/private/PrivateRoute';
 export default () => (
   <App>
     <Switch>
-      <Route path="/" component={HomeStack} />
       <Route path="/login" component={Login} />
+      <PrivateRoute path="/" exact={true} component={HomeStack} />
     </Switch>
   </App>
 );

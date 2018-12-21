@@ -23,8 +23,8 @@ export class Login extends Component {
 
   componentWillMount() {
     this.setState({
-      username: localStorage.getItem('username'),
-      password: localStorage.getItem('password'),
+      username: localStorage.getItem('username') || '',
+      password: localStorage.getItem('password') || '',
     })
   }
 
@@ -56,6 +56,7 @@ export class Login extends Component {
             localStorage.setItem('password', password);
             localStorage.session = JSON.stringify(data);
             ipcRenderer.send('auth:login');
+            this.props.history.replace('/');
           } else if (error) {
             this.setState({ isSubmitting: false });
           }
