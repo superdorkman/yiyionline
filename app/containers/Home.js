@@ -38,6 +38,8 @@ class Home extends Component {
 }
 
 const Container = styled.div`
+  display: flex;
+  justify-content: center;
   padding: 20px;
   flex: 1;
   background-image: url(${bg});

@@ -5,28 +5,28 @@ const Area = styled.div`
   -webkit-app-region: no-drag;
 `;
 
-export const AreaTop = Area.extend`
+export const AreaTop = styled(Area)`
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
 `;
 
-export const AreaBottom = Area.extend`
+export const AreaBottom = styled(Area)`
   bottom: 0;
   left: 0;
   right: 0;
   height: 4px;
 `;
 
-export const AreaLeft = Area.extend`
+export const AreaLeft = styled(Area)`
   top: 0;
   bottom: 0;
   left: 0;
   width: 4px;
 `;
 
-export const AreaRight = Area.extend`
+export const AreaRight = styled(Area)`
   top: 0;  
   bottom: 0;
   right: 0;

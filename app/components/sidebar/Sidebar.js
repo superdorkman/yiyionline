@@ -16,13 +16,18 @@ const menus = [
 
 export class Sidebar extends Component {
 
+  checkIfActive = (match, location) => {
+    console.log('checkIfActive', match, location);
+    // const { gameName } = this.props;
+    // return location.pathname === `/${gameName}`;
+  }
 
   renderMenus() {
     return menus.map((menu, idx) => {
       const { path, label } = menu;
       return (
         <li key={idx}>
-          <NavLink to={path}>{label}</NavLink>
+          <NavLink to={path} activeClassName="active">{label}</NavLink>
         </li>
       )
     })

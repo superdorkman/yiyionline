@@ -1,24 +1,27 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { Container } from "./SectionHeader.styled";
 
-export class SectionHeader extends Component {
-
-
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+function SectionHeader(props) {
+  const { darkTitle, hasBorder, callback, link, more, target, title } = props;
+  const more_flag = more !== undefined;
+  return (
+    <Container>
+      {hasBorder && (
+        <span className={darkTitle ? "dark text" : "text"}>{title}</span>
+      )}
+      {!hasBorder && <span className="title">{title}</span>}
+      {more_flag && link && (
+        <a className="more" target={target}>
+          {more}
+        </a>
+      )}
+      {more_flag && callback && (
+        <a className="more" target={target}>
+          {more}
+        </a>
+      )}
+    </Container>
+  );
 }
 
-const mapStateToProps = (state) => ({
-  
-})
-
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(SectionHeader)
+export default SectionHeader;

@@ -7,6 +7,7 @@ let tray = null;
 
 let isLoggedIn = false;
 let win = null;
+let gallaryWin = null;
 
 const startUrl = `file://${__dirname}/app.html`;
 // const startUrl = '192.168.2.106:3000';
@@ -60,7 +61,7 @@ function createLoginWin() {
   
   win.loadURL(startUrl);
 
-  win.webContents.openDevTools({mode: 'detach'});
+  // win.webContents.openDevTools({mode: 'detach'});
 
   setTray();
   
@@ -78,6 +79,7 @@ function prepareChatWin() {
   // win.loadURL(startUrl);
   const _x = (sw - 1200) / 2;
   const _y = (sh - 800) / 2;
+  win.setMinimumSize(1200, 800);
   win.setBounds({
     x: 100,
     y: 20,
@@ -101,6 +103,42 @@ function prepareChatWin() {
 
   ipcMain.on('message:arrive', (event, message) => {
     notifyUser();
+  });
+
+  ipcMain.on('gallary:open', (event, images) => {
+    if (gallaryWin) return;
+    const { width: sw, height: sh } = require('electron').screen.getPrimaryDisplay().workAreaSize;
+    gallaryWin = new BrowserWindow({
+      width: sw - 100,
+      height: sh - 100,
+      frame: false,
+      // backgroundColor: 'transparent',
+      transparent: true,
+      // icon: path.join(__dirname, 'logo.png'),
+      // skipTaskbar: true,
+      // webPreferences: {
+      //   devTools: true
+      // }
+    });
+
+    gallaryWin.loadURL(`file://${__dirname}/app.html#/gallary`);
+
+    gallaryWin.webContents.openDevTools({mode: 'detach'});
+
+    gallaryWin.on('closed', () => {
+      gallaryWin = null;
+    })
+
+    ipcMain.on('gallary:images', (event) => {
+      event.returnValue = images;
+    });
+
+    ipcMain.on('gallary:close', (event, arg) => {
+      if (!gallaryWin) return;
+      gallaryWin.close();
+      gallaryWin = null;
+      // event.returnValue = images;
+    });
   });
 
   // win.webContents.openDevTools({mode: 'detach'});
