@@ -8,9 +8,9 @@ import Avatar from '../common/avatar/Avatar';
 const menus = [
   {path: '/', label: '助手中心'},
   {path: '/warehouse', label: '仓库管理'},
-  {path: '/jinhuo', label: '我要进货'},
+  {path: '/shouhuo', label: '我要进货'},
   {path: '/chuhuo', label: '我要出货'},
-  {path: '/order', label: '我的订单'},
+  {path: '/orders', label: '我的订单'},
   {path: '/finance', label: '财务管理'},
 ]
 

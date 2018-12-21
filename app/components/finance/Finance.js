@@ -6,7 +6,7 @@ export class Finace extends Component {
   render() {
     return (
       <div>
-        助手中心
+        财务管理
       </div>
     )
   }
