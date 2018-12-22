@@ -92,7 +92,7 @@ export class ChatWin extends PureComponent {
 
   render() {
     return (
-      <Container onMouseDown={this.handleMouseDown} innerRef={ref => this.win = ref}>
+      <Container onMouseDown={this.handleMouseDown} ref={ref => this.win = ref}>
         {this.renderMsgs()}
       </Container>
     )

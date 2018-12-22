@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Container, Ctrls } from './Header.styled';
-import svgIcons from '../assets/icons/icons.svg';
+import svgIcons from '../../assets/icons/icons.svg';
+import Line from '../common/icons/Line';
+import Expand from '../common/icons/Expand';
+import Close from '../common/icons/Close';
 
 const { ipcRenderer } = window.require('electron');
 
@@ -19,15 +21,18 @@ export class Header extends Component {
         <span>{sn}</span>
         <Ctrls>
           <li onClick={() => this.handleCtrlClick('extract')}>
-            <svg><use xlinkHref={`${svgIcons}#line`}/></svg></li>
+            <Line />
+          </li>
           <li className="expand" onClick={() => this.handleCtrlClick('expand')}>
-            <svg><use xlinkHref={`${svgIcons}#expand`}/></svg></li>
+            <Expand />  
+          </li>
           <li className="close" onClick={() => this.handleCtrlClick('hide')}>
-            <svg><use xlinkHref={`${svgIcons}#close`}/></svg></li>
+            <Close />  
+          </li>
         </Ctrls>
       </Container>
     )
   }
 }
 
-export default connect(null)(Header);
+export default Header;
