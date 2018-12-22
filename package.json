@@ -1,7 +1,7 @@
 {
   "name": "yiyionline",
   "productName": "易易在线",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "易易在线",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -62,6 +62,8 @@
     "files": [
       "app/dist/",
       "app/app.html",
+      "app/logo.png",
+      "app/logogray.png",
       "app/main.prod.js",
       "app/main.prod.js.map",
       "package.json"
