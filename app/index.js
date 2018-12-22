@@ -26,3 +26,5 @@ if (module.hot) {
     );
   });
 }
+
+export const s = store;

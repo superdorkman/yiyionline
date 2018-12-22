@@ -1,7 +1,7 @@
 import MQTT from 'mqtt';
 import axios from 'axios';
 import { API_URL } from '../constants/url';
-import store from '../store';
+import { s as store } from '../index';
 
 const groupId = 'GID_ee979';
 let client;

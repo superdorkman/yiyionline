@@ -8,10 +8,29 @@ import Sidebar from '../components/sidebar/Sidebar';
 import ResizeArea from '../components/common/resize-area/ResizeArea';
 import Header from '../components/header/Header';
 
+import axios from 'axios';
+import initMqtt from '../services/mqtt';
+
+axios.interceptors.request.use((config) => {
+  const session = JSON.parse(sessionStorage.getItem("session"));
+  if (session && session.id) {
+    if (config.url.indexOf('?') > -1) {
+      config.url = `${config.url}&access_token=${session.id}`;
+    } else {
+      config.url = `${config.url}?access_token=${session.id}`;
+    }
+  }
+  return config;
+});
+
 class Home extends Component {
 
   state = {
     user: {}
+  }
+
+  componentDidMount() {
+    initMqtt();
   }
 
   _selectUser = (user) => {
