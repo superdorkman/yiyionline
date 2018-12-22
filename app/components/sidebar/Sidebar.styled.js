@@ -11,11 +11,22 @@ export const Container = styled.div`
 `;
 
 export const LogoWrap = styled.div`
+  position: relative;
   display: flex;
+  flex-direction: column;
   padding: 0 50px;
   height: 176px;
   min-height: 176px;
   align-items: center; 
+  justify-content: center;
+
+  .update {
+    max-width: 90%;
+    position: absolute;
+    bottom: 10px;
+    height: 16px;
+    overflow: hidden;
+  }
 `;
 
 export const Chats = styled.ul`

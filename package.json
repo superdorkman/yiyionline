@@ -1,7 +1,7 @@
 {
   "name": "yiyionline",
-  "productName": "yiyionline",
-  "version": "0.0.1",
+  "productName": "易易在线",
+  "version": "0.0.2",
   "description": "易易在线",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
@@ -57,8 +57,8 @@
   },
   "main": "./app/main.prod.js",
   "build": {
-    "productName": "ee979商家助手",
-    "appId": "com.github.superdorkman.ee979assistant",
+    "productName": "易易在线",
+    "appId": "com.github.superdorkman.yiyionline",
     "files": [
       "app/dist/",
       "app/app.html",
@@ -112,8 +112,7 @@
   },
   "author": {
     "name": "superdorkman",
-    "email": "superdorkman@163.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "email": "superdorkman@163.com"
   },
   "contributors": [],
   "license": "MIT",

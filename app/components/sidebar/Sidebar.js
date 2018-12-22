@@ -13,7 +13,7 @@ export class Sidebar extends Component {
   state = {
     chats: null,
     curChatSn: null,
-    updateMsg: '',
+    updateMsg: '已是最新版本是最新版是最新版是最新版是最新版是最新版是最新版',
   }
 
   componentWillMount() {
@@ -116,7 +116,9 @@ export class Sidebar extends Component {
       <Container onMouseDown={this.handleMouseDown}>
         <LogoWrap>
           <img src={logo} />
-          <div>{this.state.updateMsg}</div>
+          <div className="update" title={this.state.updateMsg}>
+            {this.state.updateMsg}
+          </div>
         </LogoWrap>
 
         <Chats>
