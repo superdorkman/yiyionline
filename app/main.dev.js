@@ -129,7 +129,7 @@ function prepareChatWin() {
 
     gallaryWin.loadURL(`file://${__dirname}/app.html#/gallary`);
 
-    gallaryWin.webContents.openDevTools({mode: 'detach'});
+    // gallaryWin.webContents.openDevTools({mode: 'detach'});
 
     gallaryWin.on('closed', () => {
       gallaryWin = null;
