@@ -13,7 +13,7 @@ export class Sidebar extends Component {
   state = {
     chats: null,
     curChatSn: null,
-    updateMsg: '已是最新版本是最新版是最新版是最新版是最新版是最新版是最新版',
+    updateMsg: '',
   }
 
   componentWillMount() {
@@ -22,7 +22,6 @@ export class Sidebar extends Component {
 
   componentDidMount() {
     ipcRenderer.on('update', (event, text) => {
-      console.log(text);
       this.setState({ updateMsg: text });
     })
   }
