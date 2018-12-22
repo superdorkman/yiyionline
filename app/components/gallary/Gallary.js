@@ -17,9 +17,9 @@ export class Gallary extends Component {
   }
 
   componentWillMount() {
-    const images = ipcRenderer.sendSync('gallary:images');
-    console.log(images)
-    this.setState({ images }, () => {
+    const args = ipcRenderer.sendSync('gallary:images');
+    console.log('gallary mount', args)
+    this.setState({ ...args }, () => {
       this.loadImg(0);
     });
     

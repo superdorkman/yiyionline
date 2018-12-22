@@ -11,6 +11,9 @@ import MsgTemplates from '../../msg-templates/MsgTemplates';
 import axios from 'axios';
 import { API_URL } from '../../../constants/url';
 import { getOssKey, uploadImg } from '../../../services/oss';
+import Emoji from '../../common/icons/Emoji';
+import History from '../../common/icons/History';
+import Photo from '../../common/icons/Photo';
 const { clipboard, ipcRenderer } = window.require('electron');
 
 export class ChatIpt extends Component {
@@ -266,6 +269,10 @@ export class ChatIpt extends Component {
     this.setState({ showTemplates: false });
   }
 
+  handleFileClick = () => {
+    alert('暂时先使用拖拽或者QQ截图工具');
+  }
+
   render() {
     const { showEmoji, showTemplates } = this.state;
 
@@ -277,17 +284,17 @@ export class ChatIpt extends Component {
           </EmojiHodler>
           <div className="left">
             <div className="icon" onClick={() => this.handleWidgetClick('emoji')}>
-              <svg><use xlinkHref={`${svgIcons}#emoji`} /></svg>
+              <Emoji />
             </div>
-            <label className="icon" onClick={() => this.handleWidgetClick('emoji')}>
-              <input type="file" accept="image/jpg,image/png,image/jpeg,image/gif" className="file" ref={ref => this.file = ref} 
-              onChange={this.handleFileChange}/>
-              <svg><use xlinkHref={`${svgIcons}#photo`} /></svg>
+            <label className="icon" onClick={this.handleFileClick}>
+              {/* <input type="file" className="file" ref={ref => this.file = ref} 
+              onChange={this.handleFileChange}/> */}
+              <Photo />
             </label>
           </div>
           <div className="right">
             <div className="icon" onClick={this.onToggleTpl}>
-              <svg><use xlinkHref={`${svgIcons}#history`} /></svg>
+              <History />
             </div>
           </div>
         </TopWidgets>

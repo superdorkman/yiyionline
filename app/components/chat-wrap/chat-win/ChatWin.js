@@ -53,6 +53,14 @@ export class ChatWin extends PureComponent {
     return { __html: html };
   }
 
+  handleImgClick(item) {
+    let images = this.transformMsgs();
+    images = images.filter(img => img.imgOnly).map(item => item.src);
+    const curIdx = images.indexOf(item.src);
+    console.log(images.length, curIdx)
+    ipcRenderer.send('gallary:open', {images, curIdx});
+  }
+
   renderMsgs() {
     const messages = this.transformMsgs();
 
@@ -70,7 +78,7 @@ export class ChatWin extends PureComponent {
           <LeftItem key={created + idx}>
             <div className="avatar">{id}</div>
             {imgOnly ? (
-              <img src={src} />
+              <img src={src} onClick={() => this.handleImgClick(item)} />
             ) : (
               <div className="content" dangerouslySetInnerHTML={this.createMarkup(msg)}></div>
             )}
@@ -81,7 +89,7 @@ export class ChatWin extends PureComponent {
         <RightItem key={created + idx}>
           <div className="avatar">易</div>
           {imgOnly ? (
-            <img src={src} />
+            <img src={src} onClick={() => this.handleImgClick(item)} />
           ) : (
             <div className="content" dangerouslySetInnerHTML={this.createMarkup(msg)}></div>
           )}
