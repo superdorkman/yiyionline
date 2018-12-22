@@ -1,16 +1,17 @@
 const initialSetting = {
-  isLoggedIn: false,
   session: {},
+  isLoggedIn: false,
   showDialog: false,
-  showDrawer: false,
-  title: '易易游戏服务网',
   toast: '',
-  showFooter: true,
-  isWechat: false,
-  message: '',
   myAllInfo: {},
   showToTop: false,
-  chatSN: '',
+  message: '',
+  contextMenu: {
+    show: false,
+    type: 'text',
+    top: 20,
+    left: 20,
+  }
 }
 
 const session = sessionStorage.session && JSON.parse(sessionStorage.session);
@@ -19,7 +20,8 @@ if (session) {
   initialSetting.session = session;
 }
 
-const setting = (state = initialSetting, action) => {
+
+const app = (state = initialSetting, action) => {
   // console.log(action)
   switch (action.type) {
     case 'LOGIN':
@@ -28,35 +30,15 @@ const setting = (state = initialSetting, action) => {
         isLoggedIn: true,
         session: action.session
       }
-    case 'LOGOUT':
-      return {
-        ...state,
-        isLoggedIn: false
-      }
-    case 'TOGGLE_DRAWER':
-      return {
-        ...state,
-        showDrawer: !state.showDrawer
-      }
     case 'OPEN_SNACK':
       return {
         ...state,
         snack: action.text
       }
-    case 'OPEN_TOAST':
+    case 'SET_MSG':
       return {
         ...state,
-        toast: action.text
-      }
-    case 'SET_CHATSN':
-      return {
-        ...state,
-        chatSN: action.sn
-      }
-    case 'SET_FOOTER':
-      return {
-        ...state,
-        showFooter: action.sig
+        message: action.msg
       }
     case 'TOGGLE_DIALOG':
       return {
@@ -64,15 +46,15 @@ const setting = (state = initialSetting, action) => {
         showDialog: !state.showDialog,
         dialog: action.text
       }
+    case 'SET_CHATSN':
+      return {
+        ...state,
+        memberSN: action.sn
+      }
     case 'SET_TITLE':
       return {
         ...state,
         title: action.title
-      }
-    case 'SET_MSG':
-      return {
-        ...state,
-        message: action.msg
       }
     case 'SET_PERSONAL_INFO':
       return {
@@ -92,17 +74,9 @@ const setting = (state = initialSetting, action) => {
           id: action.id
         }
       }
-    case 'UPDATE_MYINFO':
-      return {
-        ...state,
-        myAllInfo: {
-          ...state.myAllInfo,
-          ...action.info,
-        }
-      }
     default:
       return state
   }
 }
 
-export default setting;
+export default app;

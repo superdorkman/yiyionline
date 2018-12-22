@@ -10,7 +10,6 @@ let win = null;
 let gallaryWin = null;
 
 const startUrl = `file://${__dirname}/app.html`;
-// const startUrl = '192.168.2.106:3000';
 
 app.on('ready', createLoginWin);
 
@@ -61,7 +60,7 @@ function createLoginWin() {
   
   win.loadURL(startUrl);
 
-  // win.webContents.openDevTools({mode: 'detach'});
+  win.webContents.openDevTools({mode: 'detach'});
 
   setTray();
   

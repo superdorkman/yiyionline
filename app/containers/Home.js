@@ -3,35 +3,33 @@ import { Route, Switch } from 'react-router-dom';
 import PrivateRoute from '../components/common/private/PrivateRoute';
 import styled from 'styled-components';
 
+import ChatWrap from '../components/chat-wrap/ChatWrap';
 import Sidebar from '../components/sidebar/Sidebar';
-import Center from '../components/center/Center';
-import Chuhuo from '../components/chuhuo/Chuhuo';
-import Finance from '../components/finance/Finance';
-import Shouhuo from '../components/shouhuo/Shouhuo';
-import Orders from '../components/orders/Orders';
-import Warehouse from '../components/warehouse/Warehouse';
-
-import bg from '../assets/images/bg.png';
+import ResizeArea from '../components/common/resize-area/ResizeArea';
+import Header from '../components/header/Header';
 
 class Home extends Component {
 
+  state = {
+    user: {}
+  }
+
+  _selectUser = (user) => {
+    this.setState({ user });
+  }
+
   render() {
-    const { match } = this.props;
+    const { user } = this.state;
 
     return (
-      <Fragment>
-        <Sidebar />
-        <Container>
-          <Switch>
-            <Route exact path={`${match.url}/`} component={Center} />
-            <Route exact path='/finance' component={Finance} />
-            <Route exact path='/chuhuo' component={Chuhuo} />
-            <Route exact path='/orders' component={Orders} />
-            <Route exact path='/shouhuo' component={Shouhuo} />
-            <Route exact path='/warehouse' component={Warehouse} />
-          </Switch>
-        </Container>
-      </Fragment>
+      <Container>
+        <Sidebar selectUser={this._selectUser} />
+        <Main>
+          <Header sn={user.from}  />
+          <ChatWrap sn={user.from} />
+        </Main>
+        <ResizeArea />
+      </Container>
     );
 
   }
@@ -39,13 +37,14 @@ class Home extends Component {
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
-  padding: 20px;
   flex: 1;
-  background-image: url(${bg});
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+`;
+
+const Main = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 export default Home;

@@ -1,8 +1,8 @@
 {
-  "name": "ee979-assistant",
-  "productName": "ee979-assistant",
+  "name": "yiyionline",
+  "productName": "yiyionline",
   "version": "0.0.1",
-  "description": "ee979商家助手",
+  "description": "易易在线",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -102,13 +102,13 @@
     "publish": {
       "provider": "github",
       "owner": "superdorkman",
-      "repo": "ee979-assistant",
+      "repo": "yiyionline",
       "private": false
     }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/superdorkman/ee979-assistant.git"
+    "url": "git+https://github.com/superdorkman/yiyionline.git"
   },
   "author": {
     "name": "superdorkman",
@@ -118,7 +118,7 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/superdorkman/ee979-assistant/issues"
+    "url": "https://github.com/superdorkman/yiyionline/issues"
   },
   "keywords": [
     "electron",
@@ -131,7 +131,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/superdorkman/ee979-assistant#readme",
+  "homepage": "https://github.com/superdorkman/yiyionline#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
@@ -251,6 +251,7 @@
     "electron-log": "^2.2.17",
     "electron-updater": "^3.2.3",
     "history": "^4.7.2",
+    "js-sha1": "^0.6.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",

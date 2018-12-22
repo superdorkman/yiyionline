@@ -74,7 +74,7 @@ const styles = {
 }
 
 const mapStateToProps = (state) => ({
-  message: state.setting.message
+  message: state.app.message
 });
 
 export default connect(mapStateToProps)(ChatWrap);

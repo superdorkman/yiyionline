@@ -306,7 +306,7 @@ export class ChatIpt extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  memberSN: state.setting.memberSN
+  memberSN: state.app.memberSN
 });
 
 export default connect(mapStateToProps)(ChatIpt);
